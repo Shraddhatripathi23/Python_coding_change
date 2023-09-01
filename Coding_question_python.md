@@ -269,3 +269,80 @@ print(second_highest)
 > 89
 
 ```
+```python
+
+def decorartor(addition):
+    def inner():
+        result = addition()
+        num3 = int (input ("enter thired no to check decorartor functionality in python"))
+        result = result + num3
+        return result
+    return inner
+    
+@decorartor
+
+def addition():
+    num1 = int(input(" enter first no "))
+    num2 = int(input (" enter second no"))
+    result = num1 + num2
+    return result
+    
+print(" addition is ", addition())
+
+```
+
+
+```python
+#Python program to reverse a number
+n = int (input ("enter any no : - "))
+print("Original no is ",n)
+revsere = 0
+while n!=0:
+    revsere = revsere *10 + n%10
+    n = (n//10)
+print("After revsere no ", revsere)
+
+enter any no : - 12345
+Original no is  12345
+After revsere no  54321
+
+```
+
+```python
+#Armstrong number program in python 
+n = int (input ("enter any no : - "))
+print("Original no is ",n)
+sum1 = 0 
+tmp = n
+count = len(str(n))
+while tmp !=0:
+    digit = tmp % 10
+    sum1 += digit ** count
+    tmp = tmp //10
+if sum1 == n :
+    print("Yes Armstrong No")
+else:
+    print("Not Armstrong”)
+
+enter any no : - 153
+Original no is  153
+Yes Armstrong No
+
+```
+
+```python
+#Prime no
+n = int(input("please give a number : "))
+tmp = 0
+for i in range(2,n//2):
+    if  n%i == 0:
+        tmp =  1
+        break
+if tmp == 1:
+    print("Not prime no")
+else:
+    print("prime no")
+
+please give a number : 11
+prime no
+```
