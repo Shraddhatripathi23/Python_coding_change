@@ -1,5 +1,5 @@
-# Python_coding_change
-# Python Coding Interview Prepration 2023
+
+# Python Coding Interview Preparation 2023
 ## Last Minute Python Review
 | ![space-1.jpg](https://www.omadasearch.com/wp-content/uploads/2020/03/Interview.png) | 
 |:--:| 
