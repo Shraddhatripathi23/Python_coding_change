@@ -1,9 +1,5 @@
 # Python Coding Interview Questions
 
-<!-- Feature Image -->
-| ![space-1.jpg](https://dyclassroom.com/image/topic/python/logo.png) | 
-|:--:| 
-| Image Credits [DY Classroom](https://dyclassroom.com/python/python-introduction) |
 
 <!-- Content-->
 
