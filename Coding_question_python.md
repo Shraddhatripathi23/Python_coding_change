@@ -267,8 +267,9 @@ print(second_highest)
 
 > 90
 > 89
-
 ```
+## Decorator In python
+
 ```python
 
 def decorartor(addition):
@@ -290,10 +291,10 @@ def addition():
 print(" addition is ", addition())
 
 ```
-
+## Python program to reverse a number
 
 ```python
-#Python program to reverse a number
+
 n = int (input ("enter any no : - "))
 print("Original no is ",n)
 revsere = 0
@@ -307,9 +308,9 @@ Original no is  12345
 After revsere no  54321
 
 ```
-
+## Armstrong number program in python 
 ```python
-#Armstrong number program in python 
+
 n = int (input ("enter any no : - "))
 print("Original no is ",n)
 sum1 = 0 
@@ -329,7 +330,7 @@ Original no is  153
 Yes Armstrong No
 
 ```
-
+## Prime number program in python 
 ```python
 #Prime no
 n = int(input("please give a number : "))
