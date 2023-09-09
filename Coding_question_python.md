@@ -347,3 +347,149 @@ else:
 please give a number : 11
 prime no
 ```
+
+##  Common leters between two strings
+
+```python
+str1 = input ("Enter a string1 : - ")
+str2 = input("ENTER 2nd string2:- ")
+
+s1 = set(str1)
+s2 = set(str2)
+
+output = s1 & s2
+print("Common letter is :- ",output)
+
+> Output - 
+Enter a string1 : - shraddha
+ENter 2nd string2:- tripathi
+Common letter is :-  {'a', 'h', 'r'}
+
+
+```
+
+##  OCCURANCE OF EACH LETTERS USING dictionary 
+
+```python
+
+str1 = input ("Enter a string1 : - ")
+d = {}
+for i in str1:
+    if i in d:
+        d[i] = d[i] + 1
+        
+    else:
+        d[i] = 1 
+print(d)
+
+> Output - 
+Enter a string1 : - shraddha
+{'s': 1, 'h': 2, 'r': 1, 'a': 2, 'd': 2}
+
+
+```
+
+##  Generator with fibonacci
+
+```python
+def fibonacci():
+    x, y = 0, 1
+    while True:
+        yield x
+        x, y = y, x + y
+
+# Accept input from the user
+n = int(input("Input the number of Fibonacci numbers you want to generate? "))
+
+print("Number of first ",n,"Fibonacci numbers:")
+fib = fibonacci()
+for _ in range(n):
+    print(next(fib),end=" ")
+
+> Output - 
+Input the number of Fibonacci numbers you want to generate? 11
+Number of first  11 Fibonacci numbers:
+0 1 1 2 3 5 8 13 21 34 55 
+
+
+
+```
+
+##  Remove any specific letter to your string 
+
+```python
+String_input = (input("Input the Input string "))
+output = (input("Input the letter which you want to remove in string "))
+print(String_input.replace(output, ""))
+
+> Output - 
+Input the Input string shraddha
+Input the letter which you want to remove in string a
+shrddh
+
+
+
+```
+
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
+
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
+
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
+##  Inhrtitance 
+
+```python
+
+
+> Output - 
+
+
+
+```
