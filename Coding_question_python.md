@@ -435,9 +435,25 @@ shrddh
 
 ```python
 
+class Employee:
+    def __init__(self, id, name, basic, da):
+        self.id = id
+        self.name = name
+        self.basic = basic
+        self.da = da
+    
+    def getsalary(self):
+        return self.basic + self.da
+
+# Creating an instance of the Employee class
+emp = Employee(1, "John Doe", 5000, 2000)
+
+# Calling the getsalary() method
+salary = emp.getsalary()
+print("Total Salary:", salary)
 
 > Output - 
-
+Total Salary: 7000
 
 
 ```
