@@ -431,7 +431,7 @@ shrddh
 
 ```
 
-##  Inhrtitance 
+##  Class exp
 
 ```python
 
