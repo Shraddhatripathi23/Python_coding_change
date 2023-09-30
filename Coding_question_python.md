@@ -1116,32 +1116,32 @@ CSRE
 
 ```python
 
- 1. Write An SQL Query To Fetch Unique Values Of DEPARTMENT From Worker Table.  
+## 1. Write An SQL Query To Fetch Unique Values Of DEPARTMENT From Worker Table.  
 SELECT DISTINCT DEPARTMENT
 FROM employee;
 
-  2. Write An SQL Query To Print The FIRST_NAME And LAST_NAME From Worker Table Into A Single Column COMPLETE_NAME. A Space Char Should Separate Them.   
+##   2. Write An SQL Query To Print The FIRST_NAME And LAST_NAME From Worker Table Into A Single Column COMPLETE_NAME. A Space Char Should Separate Them.   
 SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS COMPLETE_NAME
 FROM Worker;
 
-  3. Write An SQL Query To Fetch The No. Of Workers For Each Department In The Descending Order.  
+ ##  3. Write An SQL Query To Fetch The No. Of Workers For Each Department In The Descending Order.  
 SELECT department, COUNT(worker_id) AS num_workers
 FROM employees
 GROUP BY department
 ORDER BY num_workers DESC;
 
-4.  Write An SQL Query To Print Worker Name and his/her manager name.
+## 4.  Write An SQL Query To Print Worker Name and his/her manager name.
 SELECT w.worker_name, m.worker_name as manager_name
 FROM workers w
 JOIN workers m ON w.manager_id = m.worker_id;
 
 
-5.  Write a query to find the emp who is earning the highest salary under each department.
+## 5.  Write a query to find the emp who is earning the highest salary under each department.
 SELECT worker_ID, MAX(Salary) FROM EmpDetails GROUP BY DeptID
 
 ============
 
-1. Write a program to sort the following array/list by ascending to descending without using inbuilt functions (like sort, max).  
+## 1. Write a program to sort the following array/list by ascending to descending without using inbuilt functions (like sort, max).  
 
 
 23 , 21, 5, 43, 83, 231, 21
@@ -1161,7 +1161,7 @@ print(my_list)
 
 
 
-2. Write a program to find 2nd max value without using inbuilt functions (like sort, max) in the above array.   
+## 2. Write a program to find 2nd max value without using inbuilt functions (like sort, max) in the above array.   
 
 def find_second_max(arr):
     max_value = float('-inf')
@@ -1188,7 +1188,7 @@ print("Second maximum:", second_max)
 
 
 
-3.Write a program to hit the api and fetch the result which is in json/dict format and print the selected key’s value which is a list in the sample output format.  
+## 3.Write a program to hit the api and fetch the result which is in json/dict format and print the selected key’s value which is a list in the sample output format.  
 
 
 import requests
@@ -1213,7 +1213,7 @@ else:
     
     ====
     
-    1.Print all lines of a file which doesn’t contain the word “abc”. 
+## 1.Print all lines of a file which doesn’t contain the word “abc”. 
 Sample Input File : 
 Hello my name is abc 
 I stay in Bangalore 
@@ -1226,7 +1226,7 @@ with open('sample.txt', 'r') as file:
 
 grep -v 'abc' sample.txt
 
-2.Print all lines matching the complete word “abc”.        
+## 2.Print all lines matching the complete word “abc”.        
 
 Sample Input File : 
 Hello my name is abc 
@@ -1235,7 +1235,7 @@ My full name is abcdef
 grep -w "abc" your_input_file.txt
 
 
-3. Count the number of lines in a given file (file name: order_details.csv).   
+## 3. Count the number of lines in a given file (file name: order_details.csv).   
 
 wc -l order_details.csv
 
@@ -1268,9 +1268,20 @@ wc -l order_details.csv
 
 ```
 ```
-##  Inhrtitance 
+## Take string as return interger sum
 
 ```python
+def sum_of_integers(string):
+    total = 0
+    for char in string:
+        if char.isdigit():
+            total += int(char)
+    return total
+
+
+input_string = input("Enter an integer as a string: ")
+result = sum_of_integers(input_string)
+print("Sum of integers:", result)
 
 
 > Output - 
