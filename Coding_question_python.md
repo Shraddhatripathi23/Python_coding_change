@@ -1116,6 +1116,151 @@ CSRE
 
 ```python
 
+ 1. Write An SQL Query To Fetch Unique Values Of DEPARTMENT From Worker Table.  
+SELECT DISTINCT DEPARTMENT
+FROM employee;
+
+  2. Write An SQL Query To Print The FIRST_NAME And LAST_NAME From Worker Table Into A Single Column COMPLETE_NAME. A Space Char Should Separate Them.   
+SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME) AS COMPLETE_NAME
+FROM Worker;
+
+  3. Write An SQL Query To Fetch The No. Of Workers For Each Department In The Descending Order.  
+SELECT department, COUNT(worker_id) AS num_workers
+FROM employees
+GROUP BY department
+ORDER BY num_workers DESC;
+
+4.  Write An SQL Query To Print Worker Name and his/her manager name.
+SELECT w.worker_name, m.worker_name as manager_name
+FROM workers w
+JOIN workers m ON w.manager_id = m.worker_id;
+
+
+5.  Write a query to find the emp who is earning the highest salary under each department.
+SELECT worker_ID, MAX(Salary) FROM EmpDetails GROUP BY DeptID
+
+============
+
+1. Write a program to sort the following array/list by ascending to descending without using inbuilt functions (like sort, max).  
+
+
+23 , 21, 5, 43, 83, 231, 21
+def arr_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] < arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# Example usage:
+my_list = [23 , 21, 5, 43, 83, 231, 21]
+arr_sort(my_list)
+
+print("Sorted list in descending order:")
+print(my_list)
+
+
+
+2. Write a program to find 2nd max value without using inbuilt functions (like sort, max) in the above array.   
+
+def find_second_max(arr):
+    max_value = float('-inf')
+    second_max_value = float('-inf')
+
+    for num in arr:
+        if num > max_value:
+            second_max_value = max_value
+            max_value = num
+        elif num > second_max_value and num != max_value:
+            second_max_value = num
+
+    if second_max_value == float('-inf'):
+        return "No second maximum found"
+
+    return second_max_value
+
+
+arr = [23 , 21, 5, 43, 83, 231, 21]
+second_max = find_second_max(arr)
+print("Second maximum:", second_max)
+
+
+
+
+
+3.Write a program to hit the api and fetch the result which is in json/dict format and print the selected key’s value which is a list in the sample output format.  
+
+
+import requests
+api_url = "https://abcxyz.com/input.json"
+response = requests.get(api_url)
+if response.status_code == 200:
+    data = response.json()
+    if data:
+        for student_id, student_info in data.items():
+            student_name = student_info.get("name", "N/A")
+            subjects = student_info.get("subjects", [])
+            print(f"Student ID: {student_id}")
+            print(f"Student Name: {student_name}")
+            print("Subjects:")
+            for subject in subjects:
+                print(f"- {subject}")
+            print()
+    else:
+        print("No data available in the response.")
+else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
+    
+    ====
+    
+    1.Print all lines of a file which doesn’t contain the word “abc”. 
+Sample Input File : 
+Hello my name is abc 
+I stay in Bangalore 
+My full name is abc 
+
+with open('sample.txt', 'r') as file:
+    for line in file:
+        if 'abc' not in line:
+            print(line, end='')
+
+grep -v 'abc' sample.txt
+
+2.Print all lines matching the complete word “abc”.        
+
+Sample Input File : 
+Hello my name is abc 
+I stay in Bangalore 
+My full name is abcdef   
+grep -w "abc" your_input_file.txt
+
+
+3. Count the number of lines in a given file (file name: order_details.csv).   
+
+wc -l order_details.csv
+
+  4. Fetch the last 100 lines of a log file whose name is “application.log”.  
+  tail -n 100 application.log
+  
+  5. Given a word “Exception” , print the 10 lines before and after this occurrence.  
+  
+  grep -n -B 10 -A 10 "Exception" your_file.txt
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 > Output - 
 
