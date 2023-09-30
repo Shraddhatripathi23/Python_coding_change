@@ -1293,6 +1293,22 @@ print("Sum of integers:", result)
 ##  Inhrtitance 
 
 ```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+# Creating objects of Person class
+person1 = Person("John", 25)
+person2 = Person("Alice", 30)
+
+# Calling the display method
+person1.display()
+person2.display()
 
 
 > Output - 
