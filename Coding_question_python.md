@@ -2,7 +2,27 @@
 
 
 <!-- Content-->
+##  Balanced paraenthsis
 
+```python
+
+def paraCheck( seq ):  
+   while True:  
+       if '()' in seq :  
+           seq = seq.replace ( '()' , '' )  
+       elif '{}' in seq :  
+           seq = seq.replace ( '{}' , '' )  
+       elif '[]' in seq :  
+           seq = seq.replace ( '[]' , '' )  
+       else :  
+           return not seq  
+  
+seq = '{[()]}'  
+print({paraCheck(seq)})  
+seq1 = '{[()]}{]{}}'  
+print( {paraCheck (seq1)})  
+
+```
 
 ##  Inhrtitance 
 #Single Inheritance 
