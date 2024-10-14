@@ -398,5 +398,52 @@ class D(B, C)
 It lists the classes in the order that Python will look for methods in them.
 
 ### <a href="#top"> Back to top ⬆️</a>
+easy/intermediate
+
+What are Python decorators and how would you use them?
+
+How would you setup many projects where each one uses different versions of Python and third party libraries?
+
+What is PEP8 and do you follow its guidelines when you're coding?
+
+How are arguments passed – by reference of by value? (easy, but not that easy, I'm not sure if I can answer this clearly)
+
+Do you know what list and dict comprehensions are? Can you give an example?
+
+Show me three different ways of fetching every third item in the list
+
+Do you know what is the difference between lists and tuples? Can you give me an example for their usage?
+
+Do you know the difference between range and xrange?
+
+Tell me a few differences between Python 2.x and 3.x?
+
+The with statement and its usage.
+
+How to avoid cyclical imports without having to resort to imports in functions?
+
+what's wrong with import all?
+
+Why is the GIL important? (This actually puzzles me, don't know the answer)
+
+What are "special" methods (<foo>), how they work, etc
+
+can you manipulate functions as first-class objects?
+
+the difference between "class Foo" and "class Foo(object)"
+
+tricky, smart ones
+
+how to read a 8GB file in python?
+
+what don't you like about Python?
+
+can you convert ascii characters to an integer without using built in methods like string.atoi or int()? curious one
+
+subjective ones
+
+do you use tabs or spaces, which ones are better?
+
+
 
 
