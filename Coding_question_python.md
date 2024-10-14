@@ -649,7 +649,31 @@ print 11 == 13) #True
 
 
 > Output - 
+# Python Coding Interview Questions
 
+
+<!-- Content-->
+##  Balanced paraenthsis
+
+```python
+
+def paraCheck( seq ):  
+   while True:  
+       if '()' in seq :  
+           seq = seq.replace ( '()' , '' )  
+       elif '{}' in seq :  
+           seq = seq.replace ( '{}' , '' )  
+       elif '[]' in seq :  
+           seq = seq.replace ( '[]' , '' )  
+       else :  
+           return not seq  
+  
+seq = '{[()]}'  
+print({paraCheck(seq)})  
+seq1 = '{[()]}{]{}}'  
+print( {paraCheck (seq1)})  
+
+```
 
 
 ```
@@ -1336,5 +1360,16 @@ person2.display()
 
 
 ```
+#find out commomn string 
+def common_letter():
+  str1 = input("ENter first string")
+  str2 = input("ENter second input")
+  str1 = set(str1)
+  str2 = set(str2)
+  print(str1.intersection(str2))
 
+  result = str1 & str2
+  print(result)
+common_letter()
 
+```
