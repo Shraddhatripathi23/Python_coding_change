@@ -1373,3 +1373,83 @@ def common_letter():
 common_letter()
 
 ```
+```
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if 0 < amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds")
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount(1000)
+account.deposit(500)
+account.withdraw(200)
+print(account.get_balance()) 
+```
+
+
+def safe_division(func):
+    def wrapper(num1, num2):
+        if num2 == 0:
+            return "Error: Division by zero is not allowed."
+        return func(num1, num2)
+    return wrapper
+
+@safe_division
+def divide(num1, num2):
+    return num1 / num2
+
+
+print(divide(10, 2))  
+print(divide(10, 0))
+
+
+
+class Animal():
+    def make_Sound(self):
+        return "some awaj" 
+        
+class Dog(Animal):
+    def make_Sound(self):
+        return "bho bho" 
+class cat(Animal):
+    def make_Sound(self):
+        return "meow mewo"
+obj = Dog()
+obj1 = cat()
+
+print(obj.make_Sound())
+print(obj1.make_Sound())
+
+class MathAdd():
+    def add(self,*args):
+        return sum(args) 
+obj = MathAdd()
+print(obj.MathAdd(2,3))
+print(obj.MathAdd(2,3,3))
+
+'''def safe_division(func):
+    def wrapper(num1, num2):
+        if num2 == 0:
+            return "Error: Division by zero is not allowed."
+        return func(num1, num2)
+    return wrapper
+
+@safe_division
+def divide(num1, num2):
+    return num1 / num2
+
+
+print(divide(10, 2))  
+print(divide(10, 0))  
+'''
