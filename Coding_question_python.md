@@ -1453,3 +1453,20 @@ def divide(num1, num2):
 print(divide(10, 2))  
 print(divide(10, 0))  
 '''
+
+class monkey:
+    def patch(self):
+          print ("patch() is being called")
+
+def monk_p(self):
+    print ("monk_p() is being called")
+
+# replacing address of "patch" with "monk_p"
+monkey.patch = monk_p
+
+obj = monkey()
+
+obj.patch()
+# monk_p() is being called
+https://www.datacamp.com/blog/top-python-interview-questions-and-answers
+https://www.datacamp.com/tutorial/binary-search-python
